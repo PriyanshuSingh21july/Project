@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Additional custom styles */
+        /* You can add your custom styles here */
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto">
+        <div class="flex justify-center mt-10">
+            <div class="w-full max-w-md">
+                <form action="/sign_up" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <h2 class="text-2xl text-center font-bold mb-4">SignUp Form</h2>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstName" name="firstName" placeholder="First Name" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" name="lastName" placeholder="Last Name" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="age" name="age" placeholder="Age" required />
+                    </div>
+                    <div class="mb-4">
+                        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course" name="course" placeholder="Course" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="branch" name="branch" placeholder="Branch" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="semester" name="semester" placeholder="Semester" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="section" name="section" placeholder="Section" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="rollNo" name="rollNo" placeholder="Roll Number" required />
+                    </div>
+                    <div class="mb-4">
+                        <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="marks" name="marks" placeholder="Marks" required />
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <input type="submit" value="Submit" id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
